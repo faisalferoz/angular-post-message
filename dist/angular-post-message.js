@@ -1,6 +1,6 @@
 /*!
-* angular-post-message v1.4.0
-* Copyright 2016 Kyle Welsby <kyle@mekyle.com>
+* angular-post-message v1.4.1
+* Copyright 2026 Kyle Welsby <kyle@mekyle.com>
 * Licensed under The MIT License
 */
 (function() {
@@ -18,7 +18,7 @@
         if (domain == null) {
           domain = "*";
         }
-        sender = $rootScope.sender || $window.parent;
+        sender = $window.parent;
         return sender.postMessage(message, domain);
       });
 

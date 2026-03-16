@@ -13,7 +13,7 @@
         if (domain == null) {
           domain = "*";
         }
-        sender = $rootScope.sender || $window.parent;
+        sender = $window.parent;
         return sender.postMessage(message, domain);
       });
 
